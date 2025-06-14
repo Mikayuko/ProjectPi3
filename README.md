@@ -1,69 +1,62 @@
-# ProjectPi3 - โครงการพัฒนาเว็บไซต์สำหรับบุคลากรมหาวิทยาลัยพะเยา โดยเชื่อมต่อข้อมูลจากกลุ่ม Facebook
+# UP Exercise Assessment Platform
 
-A modern React application featuring a responsive navbar and authentication system built with Vite, React, and Tailwind CSS.
+ระบบติดตามและประเมินผลกิจกรรมการออกกำลังกาย สำหรับบุคลากรมหาวิทยาลัยพะเยา
 
 ## Features
 
-- 🎨 Modern UI with Tailwind CSS
-- 📱 Fully responsive design
-- 🔒 User authentication system
-- 🎯 Clean and maintainable code structure
+- 🔐 Authentication system (Login/Register)
+- 📝 Facebook post submission
+- 🤖 AI-powered comment analysis
+- 📊 Exercise activity reporting
+- 👥 User management for administrators
+- 📱 Responsive design
 
-## Prerequisites
+## Tech Stack
 
-Before you begin, ensure you have installed:
-- Node.js (version 14.0 or higher)
-- npm (usually comes with Node.js)
+- React.js
+- Tailwind CSS
+- React Router DOM
+- Node.js
+- Express.js (upcoming)
+- MongoDB (upcoming)
 
-## Installation
+## Getting Started
 
 1. Clone the repository:
 ```bash
 git clone https://github.com/Mikayuko/ProjectPi3.git
-cd ProjectPi3
 ```
 
 2. Install dependencies:
 ```bash
+cd ProjectPi3
 npm install
 ```
 
-3. Create a `.env` file in the root directory:
-```bash
-cp .env.example .env
-```
-
-## Running the Application
-
-To start the development server:
+3. Start the development server:
 ```bash
 npm run dev
-```
-
-The application will be available at `http://localhost:5173`
-
-## Build for Production
-
-To create a production build:
-```bash
-npm run build
-```
-
-To preview the production build:
-```bash
-npm run preview
 ```
 
 ## Project Structure
 
 ```
-src/
-  ├── components/     # React components
-  │   ├── Navbar/    # Navigation component
-  │   ├── Login/     # Login component
-  │   └── SignUp/    # SignUp component
-  ├── assets/        # Static assets
-  └── App.jsx        # Main application component
+ProjectPi3/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── Admin/
+│   │   ├── Contact/
+│   │   ├── Home/
+│   │   ├── Login/
+│   │   ├── Navbar/
+│   │   ├── Post/
+│   │   ├── Report/
+│   │   └── SignUp/
+│   ├── App.jsx
+│   └── main.jsx
+├── public/
+└── package.json
 ```
 
 ## Technologies Used
